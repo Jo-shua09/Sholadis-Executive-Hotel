@@ -1,63 +1,189 @@
-# Welcome to your Vite React Project
+# Sholadis Executive Hotel
 
-## Project info
+![Sholadis Executive Hotel](public/assets/hero-hotel.jpg)
 
-**URL**: [Your Project URL]
+A modern, responsive website for Sholadis Executive Hotel, showcasing luxury accommodation, premium dining, and world-class amenities in Nigeria.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
+- **Modern UI/UX**: Built with shadcn/ui components and Tailwind CSS
+- **Smooth Animations**: Framer Motion animations for enhanced user experience
+- **SEO Optimized**: Comprehensive meta tags, Open Graph, Twitter Cards, and structured data
+- **Fast Performance**: Built with Vite for optimal loading speeds
+- **Accessibility**: WCAG compliant components and semantic HTML
+- **Type Safety**: Full TypeScript implementation
 
-**Use your preferred IDE**
+## 🏨 Hotel Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+### Rooms & Accommodation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Deluxe Rooms
+- Executive Suites
+- Presidential Suites
+- Premium amenities and comfort
 
-Follow these steps:
+### Dining
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Fine dining restaurant
+- Room service
+- Special cuisine options
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Amenities
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Conference facilities
+- Business center
+- Fitness center
+- Spa services
+- 24/7 concierge
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🚀 Tech Stack
+
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI primitives)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **State Management**: React Hooks
+- **Form Handling**: React Hook Form with Zod validation
+
+## 📋 Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn package manager
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd sholadis-executive-hotel
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build**
+   ```bash
+   npm run preview
+   ```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/           # Reusable UI components (shadcn/ui)
+│   ├── Navbar.tsx    # Navigation component
+│   ├── HeroSection.tsx
+│   ├── RoomsSection.tsx
+│   ├── DiningSection.tsx
+│   ├── AmenitiesSection.tsx
+│   ├── LocationSection.tsx
+│   └── Footer.tsx
+├── pages/
+│   └── Index.tsx     # Main landing page
+├── hooks/            # Custom React hooks
+├── lib/
+│   └── utils.ts      # Utility functions
+└── assets/           # Static assets (images, icons)
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Colors & Branding
 
-**Use GitHub Codespaces**
+The hotel's color scheme is defined in `tailwind.config.ts`:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Primary: Navy blue (`#1e3a8a`)
+- Accent: Gold (`#fbbf24`)
+- Background: Clean whites and grays
 
-## What technologies are used for this project?
+### Content Updates
 
-This project is built with:
+- Update hotel information in component files
+- Replace images in `src/assets/` with actual hotel photos
+- Modify contact information and amenities as needed
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔍 SEO & Performance
 
-## How can I deploy this project?
+### SEO Features
 
-You can deploy this project using various platforms such as Vercel, Netlify, or GitHub Pages.
+- Comprehensive meta tags
+- Open Graph and Twitter Card support
+- Structured data (JSON-LD) for search engines
+- Semantic HTML structure
+- Optimized images and assets
 
-## Can I connect a custom domain?
+### Performance Optimizations
 
-Yes, you can connect a custom domain depending on your deployment platform.
+- Code splitting with Vite
+- Lazy loading of components
+- Optimized images
+- Minimal bundle size
+
+## 🌐 Deployment
+
+### Recommended Platforms
+
+- **Vercel**: Excellent for React apps with automatic deployments
+- **Netlify**: Great for static sites with form handling
+- **GitHub Pages**: Free hosting for open-source projects
+
+### Deployment Steps
+
+1. **Build the project**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy the `dist` folder** to your hosting platform
+
+3. **Configure domain** (optional)
+   - Update DNS settings
+   - Add SSL certificate
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is proprietary software for Sholadis Executive Hotel.
+
+## 📞 Contact
+
+**Sholadis Executive Hotel**
+
+- Phone: +234 706 044 3225
+- Email: info@sholadisexecutivehotel.com
+- Website: https://sholadisexecutivehotel.com
+
+## 🙏 Acknowledgments
+
+- Built with [shadcn/ui](https://ui.shadcn.com/) components
+- Icons by [Lucide](https://lucide.dev/)
+- Animations powered by [Framer Motion](https://www.framer.com/motion/)
