@@ -1,7 +1,5 @@
 # Sholadis Executive Hotel
 
-![Sholadis Executive Hotel](public/assets/hero-hotel.jpg)
-
 A modern, responsive website for Sholadis Executive Hotel, showcasing luxury accommodation, premium dining, and world-class amenities in Nigeria.
 
 ## 🌟 Features
