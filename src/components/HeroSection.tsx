@@ -7,11 +7,7 @@ const HeroSection = () => {
     <section id="home" className="relative h-screen min-h-[700px] overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Sholadis Executive Hotel exterior at golden hour"
-          className="h-full w-full object-cover"
-        />
+        <img loading="lazy" src={heroImage} alt="Sholadis Executive Hotel exterior at golden hour" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/70 via-navy-dark/50 to-navy-dark/80" />
       </div>
 
@@ -32,8 +28,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-accent-foreground sm:text-5xl lg:text-6xl"
         >
-          Experience Executive Luxury in the Heart of{" "}
-          <span className="text-gold">Ibadan</span>
+          Experience Executive Luxury in the Heart of <span className="text-gold">Ibadan</span>
         </motion.h1>
 
         <motion.p
@@ -42,8 +37,7 @@ const HeroSection = () => {
           transition={{ delay: 0.7, duration: 0.8 }}
           className="mt-6 max-w-xl text-base font-light leading-relaxed text-accent-foreground/70 sm:text-lg"
         >
-          Where refined comfort meets world-class hospitality. Your exclusive
-          retreat awaits at Sholadis Executive Hotel.
+          Where refined comfort meets world-class hospitality. Your exclusive retreat awaits at Sholadis Executive Hotel.
         </motion.p>
 
         <motion.div

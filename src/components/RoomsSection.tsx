@@ -32,7 +32,7 @@ const rooms = [
   },
 ];
 
-const RoomCard = ({ room, index }: { room: typeof rooms[0]; index: number }) => {
+const RoomCard = ({ room, index }: { room: (typeof rooms)[0]; index: number }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -46,6 +46,7 @@ const RoomCard = ({ room, index }: { room: typeof rooms[0]; index: number }) => 
     >
       <div className="relative h-72 overflow-hidden">
         <img
+          loading="lazy"
           src={room.image}
           alt={room.name}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -71,10 +72,7 @@ const RoomCard = ({ room, index }: { room: typeof rooms[0]; index: number }) => 
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{room.description}</p>
         <div className="mt-4 flex gap-2">
           {room.features.map((f) => (
-            <span
-              key={f}
-              className="rounded-full bg-secondary px-3 py-1 text-[10px] font-medium tracking-wide text-muted-foreground"
-            >
+            <span key={f} className="rounded-full bg-secondary px-3 py-1 text-[10px] font-medium tracking-wide text-muted-foreground">
               {f}
             </span>
           ))}
@@ -98,12 +96,8 @@ const RoomsSection = () => {
           transition={{ duration: 0.7 }}
           className="mb-16 text-center"
         >
-          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">
-            Accommodations
-          </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Rooms & Suites
-          </h2>
+          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">Accommodations</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Rooms & Suites</h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
             Each room is thoughtfully designed to provide the ultimate in comfort and sophistication.
           </p>
