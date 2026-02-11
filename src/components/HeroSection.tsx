@@ -51,7 +51,7 @@ const HeroSection = () => {
               href="#rooms"
               className="rounded-sm bg-gold px-8 py-3.5 flex items-center text-sm md:text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:bg-gold-dark hover:shadow-lg"
             >
-              Explore <span className="md:block hidden">Rooms</span>
+              Explore <span className="md:block hidden pl-1"> Rooms</span>
             </a>
             <a
               href="#contact"
