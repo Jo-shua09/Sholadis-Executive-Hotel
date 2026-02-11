@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-hotel.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen min-h-[700px] overflow-hidden">
+    <section id="home" className="relative h-screen min-h-screen overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <img loading="lazy" src={heroImage} alt="Sholadis Executive Hotel exterior at golden hour" className="h-full w-full object-cover" />
@@ -12,7 +12,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+      <div className="relative z-10 flex h-full flex-col items-center pb-8 justify-center px-6 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-0 left-0 right-0 z-20"
+        className="w-full z-20 absolute bottom-0 left-0"
       >
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-stretch gap-0 rounded-t-lg bg-card/95 backdrop-blur-sm shadow-2xl overflow-hidden">
