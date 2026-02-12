@@ -18,7 +18,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="mb-4 text-sm font-medium tracking-[0.35em] text-gold uppercase"
+            className="mb-2 md:mb-4 text-sm font-medium tracking-[0.35em] text-gold uppercase"
           >
             Welcome to Sholadis
           </motion.p>
@@ -27,7 +27,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-accent-foreground sm:text-5xl lg:text-6xl"
+            className="max-w-3xl text-3xl md:text-4xl font-bold leading-tight tracking-tight text-accent-foreground sm:text-5xl lg:text-6xl"
           >
             Experience Executive Luxury in the Heart of <span className="text-gold">Ibadan</span>
           </motion.h1>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="mt-6 max-w-xl text-base font-light leading-relaxed text-accent-foreground/70 sm:text-lg"
+            className="mt-3 md:mt-6 max-w-xl text-sm md:text-base font-light leading-relaxed text-accent-foreground/70 sm:text-lg"
           >
             Where refined comfort meets world-class hospitality. Your exclusive retreat awaits at Sholadis Executive Hotel.
           </motion.p>
@@ -45,17 +45,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="mt-10 flex gap-4"
+            className="mt-4 md:mt-10 flex gap-4"
           >
             <a
               href="#rooms"
-              className="rounded-sm bg-gold px-8 py-3.5 flex items-center text-sm md:text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:bg-gold-dark hover:shadow-lg"
+              className="rounded-sm bg-gold px-8 py-3.5 flex items-center md:text-sm text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:bg-gold-dark hover:shadow-lg"
             >
               Explore <span className="md:block hidden pl-1"> Rooms</span>
             </a>
             <a
               href="#contact"
-              className="rounded-sm border border-accent-foreground/30 flex items-center px-8 py-3.5 text-nowrap md:text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:border-gold hover:text-gold"
+              className="rounded-sm border border-accent-foreground/30 flex items-center px-8 py-3.5 text-nowrap md:text-sm text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:border-gold hover:text-gold"
             >
               Contact Us
             </a>
@@ -71,21 +71,21 @@ const HeroSection = () => {
         >
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-stretch gap-0 rounded-t-lg bg-card/95 backdrop-blur-sm shadow-2xl overflow-hidden">
-              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-4">
+              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-3 md:py-4">
                 <CalendarDays className="h-5 w-5 text-gold shrink-0" />
                 <div>
                   <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">Check-in</p>
                   <p className="text-sm font-medium text-foreground">Select Date</p>
                 </div>
               </div>
-              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-4">
+              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-3 md:py-4">
                 <CalendarDays className="h-5 w-5 text-gold shrink-0" />
                 <div>
                   <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">Check-out</p>
                   <p className="text-sm font-medium text-foreground">Select Date</p>
                 </div>
               </div>
-              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-4">
+              <div className="flex flex-1 items-center gap-3 border-b md:border-b-0 md:border-r border-border px-6 py-3 md:py-4">
                 <Users className="h-5 w-5 text-gold shrink-0" />
                 <div>
                   <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">Guests</p>
@@ -94,7 +94,7 @@ const HeroSection = () => {
               </div>
               <a
                 href="#rooms"
-                className="flex items-center justify-center gap-2 bg-gold px-8 py-4 text-xs font-bold tracking-widest text-accent-foreground uppercase transition-colors hover:bg-gold-dark"
+                className="flex items-center justify-center gap-2 bg-gold px-8 py-3 md:py-4 text-xs font-bold tracking-widest text-accent-foreground uppercase transition-colors hover:bg-gold-dark"
               >
                 <Search className="h-4 w-4" />
                 Check Availability
