@@ -12,13 +12,13 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative pt-32 md:pt-24 lg:pt-32 z-10 flex h-full flex-col items-center w-full text-center justify-between">
-        <div className="flex flex-col items-center justify-center px-6">
+      <div className="relative z-10 flex min-h-screen h-full justify-center items-center w-full text-center">
+        <div className="flex flex-col items-center justify-center px-6  h-full w-full">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="mb-2 md:mb-4 text-sm font-medium tracking-[0.35em] text-gold uppercase"
+            className="mb-4 text-sm font-medium tracking-[0.35em] text-gold uppercase"
           >
             Welcome to Sholadis
           </motion.p>
@@ -27,7 +27,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="max-w-3xl text-3xl md:text-4xl font-bold leading-tight tracking-tight text-accent-foreground sm:text-5xl lg:text-6xl"
+            className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-accent-foreground sm:text-5xl lg:text-6xl"
           >
             Experience Executive Luxury in the Heart of <span className="text-gold">Ibadan</span>
           </motion.h1>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="mt-3 md:mt-6 max-w-xl text-sm md:text-base font-light leading-relaxed text-accent-foreground/70 sm:text-lg"
+            className="mt-6 max-w-xl text-sm md:text-base font-light leading-relaxed text-accent-foreground/70 sm:text-lg"
           >
             Where refined comfort meets world-class hospitality. Your exclusive retreat awaits at Sholadis Executive Hotel.
           </motion.p>
@@ -45,7 +45,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="mt-4 md:mt-10 flex gap-4"
+            className="mt-10 flex gap-4"
           >
             <a
               href="#rooms"
@@ -62,8 +62,9 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+
       {/* Booking bar */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.8 }}
@@ -101,7 +102,7 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };
