@@ -74,7 +74,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button className="md:hidden text-accent-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <Menu size={24} />
         </button>
       </div>
 
