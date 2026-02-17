@@ -96,6 +96,15 @@ const RoomsSection = () => {
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
             Each room is thoughtfully designed to provide the ultimate in comfort and sophistication.
           </p>
+          <div className="mt-6 flex items-center justify-center gap-8">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="font-semibold text-gold">Check-in:</span> 12:00 PM
+            </div>
+            <div className="h-4 w-px bg-border" />
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="font-semibold text-gold">Check-out:</span> 11:59 AM
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
