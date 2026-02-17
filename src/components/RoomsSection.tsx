@@ -7,28 +7,28 @@ import roomPresidential from "@/assets/room-presidential.jpg";
 
 const rooms = [
   {
-    name: "Deluxe Room",
-    description: "Comfortable elegance with modern amenities for the discerning traveler.",
-    price: "₦25,000",
+    name: "Standard Room",
+    description: "A cozy and well-equipped room with all the essentials for a comfortable stay.",
+    price: "₦10,000",
     perNight: "per night",
     image: roomDeluxe,
-    features: ["King Bed", "City View", "Free Wi-Fi"],
+    features: ["Smart TV", "Air Conditioning", "En-suite Bathroom"],
+  },
+  {
+    name: "Deluxe Room",
+    description: "Spacious comfort with premium bedding, modern amenities, and 24-hour room service.",
+    price: "₦12,000",
+    perNight: "per night",
+    image: roomExecutive,
+    features: ["Premium Bedding", "Room Service", "Complimentary Toiletries"],
   },
   {
     name: "Executive Suite",
-    description: "Spacious luxury with a separate living area and premium furnishings.",
-    price: "₦45,000",
-    perNight: "per night",
-    image: roomExecutive,
-    features: ["King Bed", "Living Area", "Mini Bar"],
-  },
-  {
-    name: "Presidential Suite",
-    description: "The pinnacle of opulence with panoramic views and bespoke services.",
-    price: "₦85,000",
+    description: "Our finest accommodation with elegant furnishings and exclusive services.",
+    price: "₦15,000",
     perNight: "per night",
     image: roomPresidential,
-    features: ["Master Bedroom", "Dining Room", "Butler Service"],
+    features: ["Satellite TV", "24hr Service", "Stable Electricity"],
   },
 ];
 
@@ -45,12 +45,7 @@ const RoomCard = ({ room, index }: { room: (typeof rooms)[0]; index: number }) =
       className="group relative overflow-hidden rounded-lg bg-card shadow-md"
     >
       <div className="relative h-72 overflow-hidden">
-        <img
-          loading="lazy"
-          src={room.image}
-          alt={room.name}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+        <img src={room.image} alt={room.name} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           <a
@@ -70,9 +65,9 @@ const RoomCard = ({ room, index }: { room: (typeof rooms)[0]; index: number }) =
           </div>
         </div>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{room.description}</p>
-        <div className="mt-4 flex gap-2">
+        <div className="mt-4 flex gap-2 flex-wrap w-full">
           {room.features.map((f) => (
-            <span key={f} className="rounded-full bg-secondary px-3 py-1 text-[10px] font-medium tracking-wide text-muted-foreground">
+            <span key={f} className="rounded-full text-nowrap bg-secondary px-3 py-1 text-[10px] font-medium tracking-wide text-muted-foreground">
               {f}
             </span>
           ))}
@@ -87,14 +82,14 @@ const RoomsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="rooms" className="bg-background py-24">
+    <section id="rooms" className="bg-background py-16">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="mb-16 text-center"
+          className="mb-10 text-center"
         >
           <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">Accommodations</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Rooms & Suites</h2>

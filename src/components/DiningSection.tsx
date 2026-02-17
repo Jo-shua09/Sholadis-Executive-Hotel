@@ -7,7 +7,7 @@ const DiningSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="dining" className="bg-secondary py-24">
+    <section id="dining" className="bg-secondary py-16">
       <div className="container mx-auto px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div
@@ -17,12 +17,7 @@ const DiningSection = () => {
             transition={{ duration: 0.8 }}
             className="relative overflow-hidden rounded-lg"
           >
-            <img
-              loading="lazy"
-              src={diningImage}
-              alt="Fine dining at Sholadis Executive Hotel"
-              className="h-[400px] w-full object-cover lg:h-[500px]"
-            />
+            <img src={diningImage} alt="Fine dining at Sholadis Executive Hotel" className="h-[400px] w-full object-cover lg:h-[500px]" />
             <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/30 to-transparent" />
           </motion.div>
 
@@ -30,11 +25,11 @@ const DiningSection = () => {
             <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">Culinary Excellence</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Fine Dining Experience</h2>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-              Indulge in an exquisite culinary journey at our signature restaurant. Our world-class chefs craft a menu that celebrates both local
-              Nigerian flavors and international cuisine, using only the freshest ingredients.
+              Indulge in an exquisite culinary journey at our on-site restaurant. Our chefs craft a menu that celebrates both local Nigerian flavors
+              and international cuisine, using only the freshest ingredients.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              From intimate dinners to grand celebrations, our dining spaces are designed to create unforgettable moments. Enjoy 24-hour room service
+              Unwind at our stylish bar with signature cocktails, or host your events at our fully equipped event center. Enjoy 24-hour room service
               for the ultimate in-room dining experience.
             </p>
             <div className="mt-8 flex gap-8">

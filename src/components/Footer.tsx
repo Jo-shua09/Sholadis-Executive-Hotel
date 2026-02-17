@@ -1,38 +1,30 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
 
   return (
     <footer id="contact" className="bg-navy text-primary-foreground">
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16 !pb-8">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <span className="text-xl font-bold tracking-wider text-accent-foreground">SHOLADIS</span>
-              <span className="block text-[10px] font-medium tracking-[0.3em] text-gold uppercase">
-                Executive Hotel
-              </span>
+              <img src={logo} alt="Sholadis Executive Hotel" className="h-10 w-auto" />
             </div>
             <p className="text-sm leading-relaxed text-accent-foreground/60">
-              Where refined comfort meets world-class hospitality in the heart of Ibadan.
+              Experience comfort, great dining, and exceptional service since January 2022.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">
-              Quick Links
-            </h4>
+            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Quick Links</h4>
             <div className="flex flex-col gap-3">
               {["Home", "Rooms", "Dining", "Amenities", "Location"].map((l) => (
-                <a
-                  key={l}
-                  href={`#${l.toLowerCase()}`}
-                  className="text-sm text-accent-foreground/60 transition-colors hover:text-gold"
-                >
+                <a key={l} href={`#${l.toLowerCase()}`} className="text-sm text-accent-foreground/60 transition-colors hover:text-gold">
                   {l}
                 </a>
               ))}
@@ -41,9 +33,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">
-              Contact Us
-            </h4>
+            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Contact Us</h4>
             <div className="flex flex-col gap-3">
               <a href="tel:09155008322" className="flex items-center gap-3 text-sm text-accent-foreground/60 hover:text-gold transition-colors">
                 <Phone className="h-4 w-4 text-gold shrink-0" />
@@ -53,7 +43,10 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-gold shrink-0" />
                 08076896575
               </a>
-              <a href="mailto:info@sholadishotel.com" className="flex items-center gap-3 text-sm text-accent-foreground/60 hover:text-gold transition-colors">
+              <a
+                href="mailto:info@sholadishotel.com"
+                className="flex items-center gap-3 text-sm text-accent-foreground/60 hover:text-gold transition-colors"
+              >
                 <Mail className="h-4 w-4 text-gold shrink-0" />
                 info@sholadishotel.com
               </a>
@@ -66,12 +59,8 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">
-              Newsletter
-            </h4>
-            <p className="mb-4 text-sm text-accent-foreground/60">
-              Subscribe for exclusive offers and updates.
-            </p>
+            <h4 className="mb-4 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Newsletter</h4>
+            <p className="mb-4 text-sm text-accent-foreground/60">Subscribe for exclusive offers and updates.</p>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -109,9 +98,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t border-accent-foreground/10 pt-8 text-center">
-          <p className="text-xs text-accent-foreground/40">
-            © {new Date().getFullYear()} Sholadis Executive Hotel. All rights reserved.
-          </p>
+          <p className="text-xs text-accent-foreground/40">© {new Date().getFullYear()} Sholadis Executive Hotel. All rights reserved.</p>
         </div>
       </div>
     </footer>

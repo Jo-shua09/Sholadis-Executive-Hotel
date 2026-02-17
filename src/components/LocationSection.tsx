@@ -7,21 +7,17 @@ const LocationSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="location" className="bg-secondary py-24">
+    <section id="location" className="bg-secondary py-16">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="mb-16 text-center"
+          className="mb-10 text-center"
         >
-          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">
-            Find Us
-          </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Our Location
-          </h2>
+          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">Find Us</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Our Location</h2>
         </motion.div>
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -46,11 +42,7 @@ const LocationSection = () => {
           </motion.div>
 
           {/* Address info */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          <motion.div initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }}>
             <div className="flex items-start gap-4 mb-8">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
                 <MapPin className="h-5 w-5 text-gold" />
@@ -58,8 +50,10 @@ const LocationSection = () => {
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Address</h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  Plot 26, Block A, Olojuoro,<br />
-                  Odo-Oba Junction, Boluwaji Bus Stop,<br />
+                  Plot 26, Block A, Olojuoro,
+                  <br />
+                  Odo-Oba Junction, Boluwaji Bus Stop,
+                  <br />
                   Ibadan, Oyo State, Nigeria
                 </p>
               </div>
@@ -72,8 +66,7 @@ const LocationSection = () => {
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Getting Here</h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  Conveniently located near major routes. Easily accessible from
-                  Ibadan Expressway. Airport shuttle service available upon request.
+                  Conveniently located near major routes. Easily accessible from Ibadan Expressway. Airport shuttle service available upon request.
                 </p>
               </div>
             </div>

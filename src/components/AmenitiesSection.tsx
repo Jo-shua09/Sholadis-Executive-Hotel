@@ -1,16 +1,16 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Wifi, Zap, UtensilsCrossed, ShieldCheck, Car, Dumbbell, Wind, Phone } from "lucide-react";
+import { Wifi, Zap, UtensilsCrossed, ShieldCheck, Car, Wind, Phone, PartyPopper, Wine, Sparkles } from "lucide-react";
 
 const amenities = [
-  { icon: Wifi, label: "High-Speed Wi-Fi", desc: "Complimentary fiber-optic internet" },
-  { icon: Zap, label: "24/7 Power Supply", desc: "Uninterrupted backup power" },
-  { icon: UtensilsCrossed, label: "Fine Restaurant", desc: "Nigerian & continental cuisine" },
-  { icon: ShieldCheck, label: "24/7 Security", desc: "Round-the-clock surveillance" },
-  { icon: Car, label: "Free Parking", desc: "Secure on-site parking" },
-  { icon: Dumbbell, label: "Fitness Center", desc: "State-of-the-art equipment" },
-  { icon: Wind, label: "Air Conditioning", desc: "Climate-controlled rooms" },
-  { icon: Phone, label: "Concierge", desc: "Dedicated guest services" },
+  { icon: PartyPopper, label: "Event Center", desc: "Fully equipped for all occasions" },
+  { icon: UtensilsCrossed, label: "On-site Restaurant", desc: "Nigerian & continental cuisine" },
+  { icon: Wine, label: "Stylish Bar", desc: "Signature cocktails & drinks" },
+  { icon: Phone, label: "24hr Front Desk", desc: "Round-the-clock service" },
+  { icon: Car, label: "Secure Parking", desc: "On-site parking available" },
+  { icon: Sparkles, label: "Daily Housekeeping", desc: "Fresh and spotless rooms daily" },
+  { icon: ShieldCheck, label: "24/7 Surveillance", desc: "CCTV cameras for security" },
+  { icon: Zap, label: "Stable Electricity", desc: "Uninterrupted power supply" },
 ];
 
 const AmenitiesSection = () => {
@@ -18,21 +18,17 @@ const AmenitiesSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="amenities" className="bg-background py-24">
+    <section id="amenities" className="bg-background py-16">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="mb-16 text-center"
+          className="mb-10 text-center"
         >
-          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">
-            World-Class Facilities
-          </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Hotel Amenities
-          </h2>
+          <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">World-Class Facilities</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Hotel Amenities</h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
             Everything you need for a comfortable and productive stay, all under one roof.
           </p>
