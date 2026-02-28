@@ -7,12 +7,11 @@ import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "Rooms", href: "#rooms" },
-  { name: "Dining", href: "#dining" },
-  { name: "Amenities", href: "#amenities" },
-  { name: "Location", href: "#location" },
-  { name: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Event", href: "/event" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -59,9 +58,11 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium tracking-wide text-accent-foreground/80 hover:text-gold transition-colors duration-300"
+              className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
+                location.pathname === link.href ? "text-gold" : "text-accent-foreground/80 hover:text-gold"
+              }`}
             >
-              {link.name}
+              {link.label}
             </a>
           ))}
           <a
@@ -108,7 +109,7 @@ const Navbar = () => {
           <div className="flex-1 flex flex-col items-center justify-center gap-6">
             {navLinks.map((link, index) => (
               <Link
-                key={link.name}
+                key={link.label}
                 to={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
@@ -120,7 +121,7 @@ const Navbar = () => {
                   transitionDelay: isMobileMenuOpen ? `${index * 100}ms` : "0ms",
                 }}
               >
-                {link.name}
+                {link.label}
               </Link>
             ))}
           </div>
