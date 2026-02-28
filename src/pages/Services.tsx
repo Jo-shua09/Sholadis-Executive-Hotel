@@ -59,7 +59,7 @@ const Services = () => {
   const additionalInView = useInView(additionalRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
 
       {/* Hero */}

@@ -35,7 +35,7 @@ const Event = () => {
   const galleryInView = useInView(galleryRef, { once: true, margin: "-100px" });
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
 
       {/* Hero */}
