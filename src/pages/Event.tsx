@@ -141,7 +141,7 @@ const Event = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy py-20">
+      <section className="bg-navy py-12">
         <div className="container mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <h2 className="text-3xl font-bold tracking-tight text-accent-foreground sm:text-4xl">Ready to Plan Your Event?</h2>
