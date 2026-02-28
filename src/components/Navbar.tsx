@@ -48,7 +48,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="flex items-center">
+        <a href="/home" className="flex items-center">
           <img src={logo} alt="Sholadis Executive Hotel" className="h-10 w-auto" />
         </a>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#rooms"
+            href="/contact"
             className="ml-2 rounded-sm bg-gold px-5 py-2.5 text-xs font-semibold tracking-wider text-accent-foreground uppercase transition-all hover:bg-gold-dark"
           >
             Book Now

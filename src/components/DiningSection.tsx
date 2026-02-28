@@ -47,7 +47,7 @@ const DiningSection = () => {
               </div>
             </div>
             <a
-              href="#contact"
+              href="/contact"
               className="mt-8 inline-block rounded-sm bg-gold px-8 py-3 text-xs font-semibold tracking-widest text-accent-foreground uppercase transition-colors hover:bg-gold-dark"
             >
               Reserve a Table

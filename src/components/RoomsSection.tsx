@@ -49,7 +49,7 @@ const RoomCard = ({ room, index }: { room: (typeof rooms)[0]; index: number }) =
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           <a
-            href="#contact"
+            href="/contact"
             className="block w-full rounded-sm bg-gold py-3 text-center text-xs font-bold tracking-widest text-accent-foreground uppercase transition-colors hover:bg-gold-dark"
           >
             Book Now

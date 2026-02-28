@@ -48,13 +48,13 @@ const HeroSection = () => {
             className="mt-10 flex gap-4"
           >
             <a
-              href="#rooms"
+              href="/services"
               className="rounded-sm bg-gold px-8 py-3.5 flex items-center md:text-sm text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:bg-gold-dark hover:shadow-lg"
             >
               Explore <span className="md:block hidden pl-1"> Rooms</span>
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-sm border border-accent-foreground/30 flex items-center px-8 py-3.5 text-nowrap md:text-sm text-xs text-center font-semibold tracking-widest text-accent-foreground uppercase transition-all hover:border-gold hover:text-gold"
             >
               Contact Us
