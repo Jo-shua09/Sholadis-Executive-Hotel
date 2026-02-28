@@ -146,7 +146,7 @@ const About = () => {
             className="mb-16 text-center"
           >
             <p className="text-xs font-semibold tracking-[0.3em] text-gold uppercase">Our Journey</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Milestones</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl"></h2>
           </motion.div>
           <div className="relative mx-auto max-w-2xl">
             <div className="absolute left-4 top-0 bottom-0 w-px bg-border md:left-1/2" />
