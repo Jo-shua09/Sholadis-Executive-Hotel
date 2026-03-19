@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import roomExecutive from "@/assets/room-executive.jpg";
 import diningImage from "@/assets/dining.jpg";
-import receptionThree from "@/assets/reception-three.jpg";
+import receptionThree from "@/assets/bar-lounge.png";
 
 const services = [
   {
